@@ -1,0 +1,33 @@
+body {
+    background: #0b0b0b;
+    color: #c0c0c0;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    color: #a10000;
+    text-shadow: 0 0 10px #a10000;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #a10000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid #a10000;
+}
+body.radar {
+    background: radial-gradient(circle, #000 50%, #111);
+}
+canvas {
+    background: black;
+    border: 2px solid #a10000;
+    margin-top: 20px;
+}
