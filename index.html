@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bat Mode GPS 🦇</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🦇 Bat Mode GPS</h1>
+    <p>Tracking your nocturnal flight paths...</p>
+
+    <div id="map"></div>
+    <a class="button" href="{{ url_for('radar') }}">Open Radar Mode</a>
+
+    <script>
+    async function loadMap() {
+        const perches = await fetch("/api/perches").then(r => r.json());
+        const path = await fetch("/api/flight_path").then(r => r.json());
+        console.log("Safe perches:", perches);
+        console.log("Flight path:", path);
+        // Integrate with Leaflet or Google Maps here (for demo, logged to console)
+    }
+    loadMap();
+    </script>
+</body>
+</html>

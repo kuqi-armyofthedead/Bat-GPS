@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radar Mode – Bat Mode GPS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="radar">
+    <h1>Radar Mode</h1>
+    <canvas id="radarCanvas" width="400" height="400"></canvas>
+    <p id="threats"></p>
+
+    <script src="{{ url_for('static', filename='radar.js') }}"></script>
+</body>
+</html>
